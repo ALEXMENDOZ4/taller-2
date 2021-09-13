@@ -1,4 +1,4 @@
-"""def punto1 ():
+def punto1 ():
    c = int(input("ingrese cantidad\n "))
    p = int(input("ingrese precio compra\n "))
 
@@ -145,7 +145,7 @@ def punto9():
         print("la suma es de: ",total)
 
 punto9()
-"""
+
 
 def punto10():
     num1 = int(input("ingrese numero 1\n"))
