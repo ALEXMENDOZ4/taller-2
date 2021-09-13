@@ -1,4 +1,4 @@
-def punto1 ():
+"""def punto1 ():
    c = int(input("ingrese cantidad\n "))
    p = int(input("ingrese precio compra\n "))
 
@@ -80,10 +80,31 @@ def punto6():
         descuento = total * 0.10
     elif(c < 10):
         descuento = total * 0.20
-    else:
+    elif(c >= 10):
         descuento = total * 0.40
 
     print(f'el total a pagar por {c} computadoras compradas es: ',total - descuento)
     print("el descuento aplicado es: ",descuento)
 
 punto6()
+"""
+
+def punto7():
+    p = int(input("ingresa el precio del aparato\n"))
+    m = input("ingresa la marca del aparato\n")
+    total = p
+    iva = int(input("ingresa el porcentaje de iva en aplicar\n"))
+    descuento = 0
+    if(m == "NOSY" and p >= 2000):
+      descuento = p * 0.15
+    else:
+        if(p >= 2000):
+            descuento = p * 0.10
+    total = p - descuento
+    iva = (total * iva) / 100
+    print("el total a pagar es: ",p )
+    print("el descuento aplicado es: ",descuento)
+    print("el IVA aplicado es: ",iva)
+    print("el total a pagar ya con IVA incluido es: ",total + iva)
+
+punto7()
