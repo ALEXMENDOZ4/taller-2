@@ -28,15 +28,6 @@ def punto2():
 
 punto2() 
 
-def punto3():
-    f = int(input("ingrese el valor de la fianza\n"))
-    if(f < 50000):
-        desc = f * 0.03
-    else:
-        desc = f * 0.02
-    print("el valor que debe pagar es:", desc)
-
-punto3()
 
 def punto4():
     gananciasd = int(input("cual es el valor de ganancias diarias de su fabrica\n"))
@@ -55,18 +46,4 @@ def punto4():
 punto4()
 
 
-def punto5():
-    p = int(input("ingrese el precio del terreno y automovil\n"))
-    a = int(input("ingrese el incremento anual del terreno\n"))
-    d = int(input("ingresa la devaluacion anual del automovil\n"))
-    incremento = (((p * a) / 100)* 3) / 2
-    decremento = ((p * d) / 100) * 3
-    print("la mitad del incremento del terreno en 3 años es: ", incremento )
-    print("la devaluacion del automovil en 3 años es: ", decremento)
-
-    if(decremento < incremento):
-      print("señor usuario le conviene comprar el automovil")
-    else:
-      print("señor usuario le conviene comprar el terreno")
-
-punto5()            
+            
