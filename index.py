@@ -129,3 +129,19 @@ def punto8():
     print("interes es de: ",interes) 
 
 punto8()
+
+
+def punto9():
+    num1 = int(input("ingrese un numero\n"))
+    num2 = int(input("ingrese otro numero\n"))
+    if(num1 == num2):
+        total = num1 * num2
+        print("la multiplicacion es de: ",total)
+    elif(num1 > num2):
+        total = num1 - num2
+        print("la resta es de: ",total)
+    else:
+        total = num1 + num2
+        print("la suma es de: ",total)
+
+punto9()
