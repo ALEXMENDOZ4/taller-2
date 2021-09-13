@@ -28,6 +28,15 @@ def punto2():
 
 punto2() 
 
+def punto3():
+    f = int(input("ingrese el valor de la fianza\n"))
+    if(f < 50000):
+        desc = f * 0.03
+    else:
+        desc = f * 0.02
+    print("el valor que debe pagar es:", desc)
+
+punto3()
 
 def punto4():
     gananciasd = int(input("cual es el valor de ganancias diarias de su fabrica\n"))
