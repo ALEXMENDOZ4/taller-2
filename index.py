@@ -53,3 +53,20 @@ def punto4():
 
 
 punto4()
+
+
+def punto5():
+    p = int(input("ingrese el precio del terreno y automovil\n"))
+    a = int(input("ingrese el incremento anual del terreno\n"))
+    d = int(input("ingresa la devaluacion anual del automovil\n"))
+    incremento = (((p * a) / 100)* 3) / 2
+    decremento = ((p * d) / 100) * 3
+    print("la mitad del incremento del terreno en 3 años es: ", incremento )
+    print("la devaluacion del automovil en 3 años es: ", decremento)
+
+    if(decremento < incremento):
+      print("señor usuario le conviene comprar el automovil")
+    else:
+      print("señor usuario le conviene comprar el terreno")
+
+punto5()            
