@@ -1,4 +1,4 @@
-def punto1 ():
+"""def punto1 ():
    c = int(input("ingrese cantidad\n "))
    p = int(input("ingrese precio compra\n "))
 
@@ -145,3 +145,17 @@ def punto9():
         print("la suma es de: ",total)
 
 punto9()
+"""
+
+def punto10():
+    num1 = int(input("ingrese numero 1\n"))
+    num2 = int(input("ingrese numero 2\n"))
+    num3 = int(input("ingrese numero 3\n"))
+    if(num1 > num2 and num1 > num3):
+        print("el numero mayor es numero 1 y su valor es: ",num1)
+    elif(num2 > num1 and num2 > num3):    
+        print("el numero mayor es numero 2 y su valor es: ",num2)
+    elif(num3 > num1 and num3 > num2):    
+        print("el numero mayor es numero 3 y su valor es: ",num3)    
+
+punto10()
