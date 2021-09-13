@@ -1,4 +1,4 @@
-"""def punto1 ():
+def punto1 ():
    c = int(input("ingrese cantidad\n "))
    p = int(input("ingrese precio compra\n "))
 
@@ -87,7 +87,7 @@ def punto6():
     print("el descuento aplicado es: ",descuento)
 
 punto6()
-"""
+
 
 def punto7():
     p = int(input("ingresa el precio del aparato\n"))
@@ -108,3 +108,24 @@ def punto7():
     print("el total a pagar ya con IVA incluido es: ",total + iva)
 
 punto7()
+
+
+def punto8():
+    p = int(input("ingrese numero de piezas\n"))
+    c = int(input("ingrese costo por pieza\n"))
+    total = p * c
+    if(total > 500000):
+        invertir = total * 0.55
+        prestamo = total * 0.30
+        credito =  total * 0.15
+    else:
+        invertir = total * 0.70
+        prestamo = 0
+        credito = total * 0.30
+    interes = credito * 0.20
+    print("cantidad a invertir es de: ",invertir) 
+    print("cantidad a prestamo es de: ",prestamo)
+    print("cantidad a credito es de: ", credito)
+    print("interes es de: ",interes) 
+
+punto8()
